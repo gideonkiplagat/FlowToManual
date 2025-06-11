@@ -1,0 +1,26 @@
+### Hello World (Health Check)
+GET http://localhost:5000/hello
+Content-Type: application/json
+
+###
+
+### Register a New User
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpass123",
+  "role": "BA"
+}
+
+###
+
+### Login with Existing User
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpass123"
+}
